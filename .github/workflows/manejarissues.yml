@@ -1,7 +1,7 @@
 name: Issues Alerts
 on:
   issues:
-    types: [opened, closed]
+    types: opened
 jobs:
   AlAbrir:
     runs-on: ubuntu-latest
