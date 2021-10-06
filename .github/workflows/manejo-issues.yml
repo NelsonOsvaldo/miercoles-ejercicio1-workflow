@@ -1,0 +1,8 @@
+on: 
+	issues:
+		types: opened
+jobs:
+	alabrir:
+		runs-on: ubuntu-latest
+		steps:
+			- run: echo “Caso abierto #${{ github.event.issue.number }}”
