@@ -1,8 +1,9 @@
+name: Issues Alerts
 on:
   issues:
     types: opened
 jobs:
-  alAbrir:
+  AlAbrir:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Caso abierto #${{ github.event.issue.number }}"
